@@ -1,0 +1,23 @@
+[project]
+name = "ytrag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Chathura Dharmasiri", email = "chathuramaheshdharmasiride@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.4.0",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.3",
+    "pymupdf>=1.28.2",
+    "pypdf>=6.18.1",
+]
+
+[project.scripts]
+ytrag = "ytrag:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
